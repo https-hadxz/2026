@@ -1,0 +1,22 @@
+let x = 17%5;
+console.log(x);
+let resultado = 10+2*3;
+console.log(resultado);
+let a = 7/2;
+console.log(a);
+let valor = 2**3;
+console.log(valor);
+let n = 5;
+let r = n++;
+console.log(n,"e",r);
+let n2 = 5;
+let r2 = ++n2;
+console.log("n = ", n2, "e r = ", r2)
+let x2 = -13%5;
+console.log(x2);
+let resultado2 = "10" + 5;
+console.log(resultado2);
+    let a2 = 10;
+    let b = 3;
+    let c = a2%b+a2/b;
+    console.log(c);

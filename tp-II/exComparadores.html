@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Primeira Tabuada</title>
+</head>
+<body>
+
+    <h1>Programa da Tabuada</h1>
+    <p>Abra a página e veja o resultado abaixo:</p>
+    
+    <div id="resultado"></div>
+
+    <script>
+        // 1. Escolhemos o número que queremos calcular a tabuada
+        let numero = 7; 
+
+        // 2. Pegamos o lugar na tela onde vamos exibir o resultado
+        let espacoResultado = document.getElementById("resultado");
+
+        // 3. O laço "PARA" (for)
+        // Ele começa com 'i' valendo 1.
+        // Ele vai continuar rodando ENQUANTO 'i' for menor ou igual a 10.
+        // A cada volta, o 'i' ganha +1 (i++).
+        for (let i = 1; i <= 10; i++) {
+            
+            // Calculamos a conta básica
+            let conta = numero * i;
+
+            // Criamos o texto bonitinho: "7 x 1 = 7"
+            let texto = numero + " x " + i + " = " + conta;
+
+            // Jogamos esse texto dentro da nossa página, pulando uma linha (<br>)
+            espacoResultado.innerHTML = espacoResultado.innerHTML + texto + "<br>";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+let r = "10" > "2";
+console.log(r);
+let r2 = "5" <= 5;
+console.log(r2);
+let r3 = 10 < "2";
+console.log(r3);
+let r4 = null >= 0;
+console.log(r4);
+let r5 = undefined >= 0;
+console.log(r5);
+let r6 = [] <1;
+console.log(r6);
+let r7 = new Date("2025-01-01") < new Date("2025-12-31");
+console.log(r7);
+let r8 = "a" < "A";
+console.log(r8);
