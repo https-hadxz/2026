@@ -1,11 +1,15 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import HelloWorld from './components/HelloWorld.vue'
+import lista from './components/Lista.vue'
 import TheWelcome from './components/TheWelcome.vue'
 const id = ref(2);
 const textoParaAdicionar = ref("");
 const titulos = ref([{id: 1, texto: "CONSEGUI!"}])
 
+const count = ref(0)
+function increment(){
+
+}
 let vetor = ref([0])
 
 function adicionarVue(){
@@ -20,7 +24,7 @@ textoParaAdicionar.value = "";
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-    <HelloWorld v-for="titulo in titulos" :msg= "titulo.texto" :key="titulo.id" />
+    <lista v-for="titulo in titulos" :title= "titulo.texto" :key="titulo.id" />
     </div>
   </header>
 
